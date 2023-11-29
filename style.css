@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.home-page{
+    min-height: 100vh;
+    background:url('bg-img.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-items: center;
+    z-index: 100;
+    background: linear-gradient(#5c1216 40%,black );
+}
+.logo{
+    position: absolute;
+    top: -5px;
+    left: 30px;
+}
+.navbar a{
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 1.5rem;
+    text-transform: uppercase;
+
+}
+.h1{
+    font-size: 4rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    text-align: center;
+    padding-top:15vh ;
+}
+.p1{
+    font-size: 1.5rem;
+    color: rgb(167, 162, 162); 
+    text-align: center;
+    padding: 2vh 350px 4vh 350px;
+}
+
+.butoni-ticket button{
+    padding: 15px 32px;
+    background-color: #5c1216 ;
+    border: 3px solid white; 
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-size: 16px;
+    color: white;
+
+}
+
+.butoni-ticket{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+    margin-bottom: 5px;
+}
+.butoni-ticket button:hover{
+    background-color: white;
+    color: #5c1216 ;
+}
+
+
