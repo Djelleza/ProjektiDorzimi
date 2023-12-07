@@ -20,12 +20,14 @@
         </header>
 
 
-<div class="programi">
+    <div class="programi">
         <h1 class="title-1">Movies At Orikino</h1>
+         
+        <div class="slide" >  
+            <img id="slideshow"  width="1250" height="500"/>
+        </div>
 
-   
     <h1 class="title-2">Now Playing</h1>
-
 
     <div class="container">
 
@@ -134,6 +136,28 @@
 
 
 </div>
+
+
+<script>
+    let i = 0;
+    let imgArray = ['slider1.png','slider2.png','slider3.png','slider4.png','slider5.png','slider6.png'];
+
+    function changeImg(){
+        document.getElementById('slideshow').src = imgArray[i];
+
+        if(i< imgArray.length -1){
+            i++;
+        }
+        else{
+            i=0;
+        }
+        setTimeout("changeImg()", 2600);
+    }
+    document.addEventListener(onload, changeImg());
+</script>
+
+
+
 
 </body>
 </html>

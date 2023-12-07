@@ -107,6 +107,16 @@
     align-content: space-between;
   }
 
+.slide{
+    margin-left: 140px;
+    margin-bottom: 20px;
+}
+#slideshow{
+    display: flex;
+    border-radius: 25px;
+    box-shadow: 4px 4px 30px #5c1216;
+}
+
   .filmi {
     position: relative;
     width: 320px;
@@ -115,7 +125,7 @@
  
   
   .filmi-foto {   
-    box-shadow: 4px 4px 30px #5c1216;;
+    box-shadow: 4px 4px 30px #5c1216;
     display: block;
     width:300px;
     height: auto;
@@ -192,6 +202,9 @@
     transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
     
+  }
+  .programi{
+    margin-bottom: 20px;
   }
   .filmi h2{
     color: white;
