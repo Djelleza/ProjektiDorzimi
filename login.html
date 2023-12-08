@@ -23,10 +23,10 @@
 <form action="">
     <h1 >Login</h1>
     <div class="input-box">
-        <input type="text" placeholder="Username" required>
+        <input type="text"  id="name" placeholder="Username" required>
     </div>
     <div class="input-box">
-        <input type="password" placeholder="Password" required>
+        <input type="password" id="password" placeholder="Password" required>
     </div>
     <div class="remember-forgot">
         <label >
@@ -34,11 +34,32 @@
         </label>
         <a href="">Forgot password?</a>
     </div>
-    <button class="btn" type="submit">Login</button>
+    <button class="btn" type="submit" onclick="validateForm()">Login</button>
     <div class="register-link">
         <p>Don't have an account? <a href="signup.html">Sign up</a></p>
     </div>
 </form>
     </div>
+    <script>
+        function validateForm(){
+        var name=document.getElementById('name').value;
+     
+        var password=document.getElementById('password').value;
+
+        
+        var nameRegex=/^[a-zA-Z0-9_-]{3,16}$/;
+        if(!nameRegex.test(name)){
+         alert('Please enter a valid username!');
+         return false;
+        }
+        
+        var passwordRegex=/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}$/;
+        if(!passwordRegex.test(password)){
+            alert('Please enter a valid password!');
+            return false;
+        }
+    }
+
+    </script>
 </body>
 </html>
