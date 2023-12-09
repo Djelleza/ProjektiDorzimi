@@ -4,12 +4,6 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
-.home-page{
-    min-height: 100vh;
-    background:url('bg-img.jpg');
-    background-size: cover;
-    background-position: center;
-}
 .header{
     position: fixed;
     top: 0;
@@ -35,23 +29,27 @@
     font-weight: 500;
     margin-left: 1.5rem;
     text-transform: uppercase;
-
 }
-.h1{
+.maini{
+    background:url('bg-img.jpg');
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.maini .h1{
     font-size: 4rem;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: white;
     text-align: center;
     padding-top:15vh ;
 }
-.p1{
+.maini .p1{
     font-size: 1.5rem;
     color: rgb(167, 162, 162); 
     text-align: center;
     padding: 2vh 350px 4vh 350px;
 }
-
-.butoni-ticket button{
+.maini .butoni-ticket button{
     padding: 15px 32px;
     background-color: #5c1216 ;
     border: 3px solid white; 
@@ -60,37 +58,30 @@
     transition: all 0.3s ease 0s;
     font-size: 16px;
     color: white;
-
 }
-
-.butoni-ticket{
+.maini .butoni-ticket{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center;   
     margin-bottom: 5px;
 }
-.butoni-ticket button:hover{
+.maini .butoni-ticket button:hover{
     background-color: white;
     color: #5c1216 ;
 }
-
+/* movie page */
 .movie-body{
     background-color: black;
 }
-
-.title-1{
-    
-        text-align: center; 
-        padding-top: 10vh;
-        font-size: 80px;
-        text-shadow: 2px 2px 4px whitesmoke;
-        color: #5c1216;
-        margin-bottom: 20px;
-    
+.title-1{   
+    text-align: center; 
+    padding-top: 10vh;
+    font-size: 80px;
+    text-shadow: 2px 2px 4px whitesmoke;
+    color: #5c1216;
+    margin-bottom: 20px;
 }
-
 .title-2{
     color: #5c1216;
     text-shadow: 2px 2px 4px white;
@@ -105,8 +96,7 @@
     justify-content: space-evenly;
     align-items: center;
     align-content: space-between;
-  }
-
+}
 .slide{
     margin-left: 140px;
     margin-bottom: 20px;
@@ -116,24 +106,18 @@
     border-radius: 25px;
     box-shadow: 4px 4px 30px #5c1216;
 }
-
-  .filmi {
+.filmi {
     position: relative;
     width: 320px;
     padding: 20px 10px 20px 10px;
-   }
- 
-  
-  .filmi-foto {   
+}  
+.filmi-foto {   
     box-shadow: 4px 4px 30px #5c1216;
     display: block;
     width:300px;
-    height: auto;
-    
-  }
-  
-  
-  .middle2 , .middle{
+    height: auto;    
+}  
+.middle2 , .middle{
     position: absolute;
     bottom: 57px;
     left: 10px;
@@ -144,13 +128,11 @@
     width: 100%;
     height: 0;
     transition: .5s ease;
-
-  }
-
-  .filmi:hover .middle{
+}
+.filmi:hover .middle{
    height: 85.5%;
-  }
-  .middle3{
+}
+.middle3{
     position: absolute;
     bottom: 82px;
     left: 10px;
@@ -161,22 +143,19 @@
     width: 100%;
     height: 0;
     transition: .5s ease;
-  }
-
-  .filmi:hover .middle3{
+}
+.filmi:hover .middle3{
    height: 500px;
-  }
-  .filmi:hover .middle2{
+}
+.filmi:hover .middle2{
     height: 500px;
-   }
-   
-  .pershkrimi{
-   
+}
+.pershkrimi{   
    padding: 40px 25px 20px 25px;
    color: white;
    font-size: 1.3rem;
-  }
-  .infoja{
+}
+.infoja{
     font-size: 1.5rem;
     color: white;
    text-decoration: none;
@@ -184,11 +163,8 @@
    border: 2px solid white;
    background-color: #2d0b00;
    padding: 7px 7px;
-
-    
-  }
-  
-  .text {
+}  
+.text {
     width: 300px;
     display: flex;
     justify-content: center;
@@ -199,21 +175,18 @@
     white-space: nowrap;
     color: white;
     overflow: hidden;
-    transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-    
-  }
-  .programi{
+}
+.programi{
     margin-bottom: 20px;
-  }
-  .filmi h2{
+}
+.filmi h2{
     color: white;
     text-shadow: 0 0 6px red;
     margin-top: 10px;
     text-align: center;
-  }
-
-  .buytickets-body{
+}
+/* login and signup */
+.buytickets-body{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -221,10 +194,8 @@
     background:  linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(bg4.jpg) no-repeat;
     background-size: cover;
     background-position: center;
-
- }
- .wrapper{
-    
+}
+.wrapper{    
     width: 420px;
     background-color: transparent;
     border: 2px solid rgba(255, 255, 255, .2);
@@ -233,22 +204,19 @@
     color: white;
     border-radius: 10px;
     padding: 30px 40px;
-
- }
- .wrapper h1{
+}
+.wrapper h1{
     font-family: garamond;
     font-size: 36px;
     text-align: center;
- }
- .wrapper .input-box{
-    
+}
+.wrapper .input-box{    
     width: 100%;
     height: 50px;
     border-color: #5c1216;
     margin: 30px 0;
-
- }
- .input-box input{
+}
+.input-box input{
     width: 100%;
     height: 100%;
     background: transparent;
@@ -260,25 +228,20 @@
     font-size: 19px;
     color: white;
     padding: 20px 45px 20px 20px;
- }
+}
 .input-box input::placeholder{
     color: white;
-
 }
-.wrapper .remember-forgot{
-    
+.wrapper .remember-forgot{    
     display: flex;
     justify-content: space-between;
     font-size: 14.5px;
     margin: -15px 0 15px;
 }
 .remember-forgot label input{
-   
-    accent-color: white;
+    color: white;
     margin-right: 3px;
-
 }
-
 .remember-forgot a{
     color: white;
     text-decoration: none;
@@ -286,9 +249,7 @@
 .remember-forgot a:hover{
     text-decoration: underline;
 }
-
-.wrapper .btn{
-   
+.wrapper .btn{  
    width: 100%;
    height: 45px;
    background-color: white;
@@ -300,10 +261,8 @@
    font-size: 16px;
    color: #333;
    font-weight: 600;
-
 }
 .wrapper .register-link{
-  
     font-size: 14.5px;
     text-align: center;
     margin: 20px 0 15px;
@@ -315,16 +274,87 @@
 }
 .register-link p a:hover{
     text-decoration: underline;
-
 }
 .about-us-paragraphs{
     color: white;
     padding-left: 30px;
     padding-right: 60px;
     margin-bottom: 30px;
- }
- .about-us-paragraphs h3,h2{
-     text-shadow: 2px 2px 4px #5c1216;
-     margin-top: 15px;
- }
+}
+.about-us-paragraphs h3,h2{
+    text-shadow: 2px 2px 4px #5c1216;
+    margin-top: 15px;
+}
 
+/* footer */
+
+footer{
+    background: linear-gradient( #5c1216 40%, black );
+    min-height: 250px ;
+    display: flex ;
+    flex-direction: column ;
+    padding-bottom: 2.5rem;
+    margin-top: auto;
+    position: relative;
+    bottom: 0;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: space-evenly;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 10px; 
+    justify-content: space-between;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 25px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px ;
+    background: black;
+    height: 2px;
+    box-sizing:border-box ;
+    width: 50px;
+}
+.footer-col ul{
+    list-style: none;
+}
+.footer-col p,  ul li a {
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    font-weight: 300;
+    text-transform: capitalize;
+    color: #ffffffff;
+    transition: all 0.3s ease;
+    margin-bottom: 10px;
+}
+.footer-col ul li a:hover{
+    color:#fff ;
+    padding-left: 6px;
+}
+.footer-col .social-link a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background: rgb(255, 255, 255,0.2);
+    margin: 0 10px 10px 0px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    transition: all .5s ease ;   
+}
+.footer-col .social-link a:hover{
+    color:#24262b ;
+    background: #fff;
+}
