@@ -1,3 +1,6 @@
+<?php
+ $x = include 'inc/header.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,17 +10,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="buytickets-body">
-    <header class="header" style="background:transparent;">
-        <a href="" class="logo"><img src="logo2.png" alt="" height="100" width="100"></a>
+    <?php $x; ?>
     
-        <nav class="navbar">
-            <a href="homepage.php" >Home</a>
-            <a href="movies.php">movies</a>
-            <a href="comingsoon.php">coming soon</a>
-            <a href="aboutus.php">about us</a>
-            
-        </nav>
-        </header>
    
     <div  class="wrapper">
 <form action="">

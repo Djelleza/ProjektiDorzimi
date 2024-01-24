@@ -1,3 +1,6 @@
+<?php
+    $x=include 'inc/header.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,15 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body class="home-page">
-    <header class="header">
-        <a href="" class="logo"><img src="logo2.png" alt="" height="100" width="100"></a>
-        <nav class="navbar">
-            <a href="homepage.php" style="text-decoration:underline;">Home</a>
-            <a href="movies.php">movies</a>
-            <a href="comingsoon.php">coming soon</a>
-            <a href="aboutus.php">about us</a> 
-        </nav>
-    </header>
+    <?php $x; ?>
     <main class="maini">
         <h1 class="h1">ORIKINO </h1>
         <p class="p1">Lights, Camera, Date Night! Our cinema is the perfect backdrop for your next cinematic adventure. Unleash the magic - book your tickets now!</p>

@@ -9,10 +9,10 @@
 <body class="movie-body">
     <header class="header">
          <nav class="navbar">
-            <a href="../homepage.html" >Home</a>
-            <a href="../movies.html">movies</a>
-            <a href="../comingsoon.html">coming soon</a>
-            <a href="../aboutus.html">about us</a>
+            <a href="../homepage.php" >Home</a>
+            <a href="../movies.php">movies</a>
+            <a href="../comingsoon.php">coming soon</a>
+            <a href="../aboutus.php">about us</a>
             
         </nav>
         </header>
@@ -43,7 +43,7 @@
             </ul>
             <div class="butoni-orari">
                     
-                <a href="joker-orari.html" class="cta">
+                <a href="joker-orari.php" class="cta">
                     <button>Schedule</button>
                 </a>
             </div>

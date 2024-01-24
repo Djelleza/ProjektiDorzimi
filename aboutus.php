@@ -1,3 +1,6 @@
+<?php
+ $x = include 'inc/header.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,16 +12,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body class="movie-body">
-    <header class="header">
-        <a href="" class="logo"><img src="logo2.png" alt="" height="100" width="100"></a>
-
-        <nav class="navbar">
-            <a href="homepage.php">Home</a>
-            <a href="movies.php">movies</a>
-            <a href="comingsoon.php">coming soon</a>
-            <a href="aboutus.php" style="text-decoration:underline;">about us</a>
-        </nav>
-    </header>
+    <?php $x; ?>
+  
         <h1 class="title-1-au" >About Us</h1>
         
     <div class="about-us-paragraphs" >
