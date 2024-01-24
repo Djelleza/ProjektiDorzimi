@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    font-size: 16px;
 }
 .header{
     position: fixed;
@@ -47,7 +48,7 @@
     font-size: 1.5rem;
     color: rgb(167, 162, 162); 
     text-align: center;
-    padding: 2vh 350px 4vh 350px;
+    padding: 2vh 5%;
 }
 .maini .butoni-ticket button{
     padding: 15px 32px;
@@ -64,7 +65,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;   
-    margin-bottom: 5px;
+    margin: 20px 5%;
 }
 .maini .butoni-ticket button:hover{
     background-color: white;
@@ -105,11 +106,14 @@
     display: flex;
     border-radius: 25px;
     box-shadow: 4px 4px 30px #5c1216;
+    max-width: 100%;
+    height: auto;
 }
 .filmi {
     position: relative;
-    width: 320px;
-    padding: 20px 10px 20px 10px;
+    width: 28%;
+    padding: 20px 20px 20px 20px;
+    margin-left: 20px;
 }  
 .filmi-foto {   
     box-shadow: 4px 4px 30px #5c1216;
@@ -125,27 +129,12 @@
     background-color: transparent ;
     backdrop-filter: blur(2px);
     overflow: hidden;
-    width: 100%;
+    width: 75%;
     height: 0;
     transition: .5s ease;
 }
 .filmi:hover .middle{
    height: 85.5%;
-}
-.middle3{
-    position: absolute;
-    bottom: 82px;
-    left: 10px;
-    right: 0;
-    background-color: transparent ;
-    backdrop-filter: blur(2px);
-    overflow: hidden;
-    width: 100%;
-    height: 0;
-    transition: .5s ease;
-}
-.filmi:hover .middle3{
-   height: 500px;
 }
 .filmi:hover .middle2{
     height: 500px;
@@ -285,6 +274,14 @@
     text-shadow: 2px 2px 4px #5c1216;
     margin-top: 15px;
 }
+.title-1-au{
+    text-align: center;
+    padding-top: 10vh;
+    font-size: 80px;
+    text-shadow: 2px 2px 4px whitesmoke;
+    color: #5c1216;
+    margin-bottom: 20px;
+}
 
 /* footer */
 
@@ -304,9 +301,10 @@ footer{
     justify-content: space-evenly;
 }
 .footer-col{
-    width: 25%;
-    padding: 0 10px; 
+    width: 100%;
+    padding: 0 5%; 
     justify-content: space-between;
+    box-sizing: border-box;
 }
 .footer-col h4{
     font-size: 18px;
