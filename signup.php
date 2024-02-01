@@ -18,16 +18,17 @@
     </header>
     
     <div  class="wrapper">
-<form action="">
+   
+<form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post">
     <h1 >Sign up</h1>
     <div class="input-box">
-        <input type="text" placeholder="Username"  id="name" required>
+        <input type="text" placeholder="Username" name="user"  id="name" required>
     </div>
     <div class="input-box">
-        <input type="email" placeholder="Email" id="email" required>
+        <input type="email" placeholder="Email" name="email" id="email" required>
     </div>
     <div class="input-box">
-        <input type="password" placeholder="Password" id="password"  required>
+        <input type="password" placeholder="Password" name="psw" id="password"  required>
     </div>
     <div class="remember-forgot">
         <label >
@@ -35,11 +36,13 @@
         </label>
        
     </div>
-    <button class="btn" type="submit"  onclick="validateForm()">Sign up</button>
+    <button class="btn" type="submit"  onclick="validateForm()" name="registerBtn" value="register">Sign up</button>
     <div class="register-link">
         <p>Already have an account? <a href="login.php">Login</a></p>
     </div>
+
 </form>
+<?php include_once 'database/registerController.php';?>
 
     </div>
 

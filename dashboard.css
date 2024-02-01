@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-items: center;
+    z-index: 100;
+    background:transparent;
+}
+.logo{
+    position: absolute;
+    top: -5px;
+    left: 30px;
+}
+.navbar a{
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 1.5rem;
+    text-transform: uppercase;
+}
+
+body{
+    background:  linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(bg4.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    display: block;
+    color: #fff;
+    padding-top: 130px;
+    padding-left: 80px;
+    padding-right: 80px;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+table{
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    
+}
+h2{
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+th, td {
+    /* border: 2px solid #b8b3b3; */
+    text-align: left;
+    padding: 8px;
+    background-color: rgb(33, 33, 33);
+    /* background: transparent; */
+    background-color: transparent;
+    border: 5px solid rgba(175, 169, 169, 0.2);
+    backdrop-filter: blur(20px);
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, .2); */
+    color: white;
+}
+th {
+    background-color: #100f0f;
+    /* color: white; */
+}
+
+
+

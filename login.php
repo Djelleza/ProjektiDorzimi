@@ -1,3 +1,8 @@
+<?php
+    session_start();
+    // $x=include 'inc/header2.php';
+    
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +12,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="buytickets-body">
+    
     <header class="header" style="background:transparent;">
     <a href="" class="logo"><img src="logo2.png" alt="" height="100" width="100"></a>
         <nav class="navbar">
@@ -18,26 +24,28 @@
     </header>
     
     <div  class="wrapper">
-<form action="">
-    <h1 >Login</h1>
-    <div class="input-box">
-        <input type="text"  id="name" placeholder="Username" required>
-    </div>
-    <div class="input-box">
-        <input type="password" id="password" placeholder="Password" required>
-    </div>
-    <div class="remember-forgot">
-        <label >
-            <input type="checkbox">Remember me
-        </label>
+        <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post">
+        <h1 >Login</h1>
+        <div class="input-box">
+            <input type="text" name="user" id="name" placeholder="Username" required>
+        </div>
+        <div class="input-box">
+            <input type="password" name="psw" id="password" placeholder="Password" required>
+        </div>
+        <div class="remember-forgot">
+            <!-- <label >
+             <input type="checkbox">Remember me
+            </label> -->
         <a href="">Forgot password?</a>
-    </div>
-    <button class="btn" type="submit" onclick="validateForm()">Login</button>
+        </div>
+    <button class="btn" type="submit" name="loginBtn" value="register" onclick="validateForm()"  >Login</button>
+    
     <div class="register-link">
         <p>Don't have an account? <a href="signup.php">Sign up</a></p>
     </div>
 </form>
-    </div>
+<?php include_once 'database/loginController.php';?>
+    
     <script>
         function validateForm(){
         var name=document.getElementById('name').value;
