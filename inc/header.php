@@ -3,7 +3,6 @@
 <?php
 session_start();
 
-// Check if the user is logged in
 if (isset($_SESSION['user'])) {
     echo   '<header class="header">
             <a href="" class="logo"><img src="logo2.png" alt="" height="100" width="100"></a>
@@ -18,6 +17,9 @@ if (isset($_SESSION['user'])) {
     if ($_SESSION['role'] === 'admin') {
         
         echo '<a href="dashboard.php">Dashboard</a>';
+        if (basename($_SERVER['PHP_SELF']) == 'movies.php' ||basename($_SERVER['PHP_SELF']) == 'dashboard.php' || basename($_SERVER['PHP_SELF']) == 'comingsoon.php') {
+            echo '<a href="insertM.php" style="font-size: 1.5rem;border: 2px solid white;border-radius: 50%;display: inline-block;width: 30px;height: 30px;line-height: 25px;text-align: center;text-decoration: none;color: white;">+</a>';
+        }
     }
     echo '<a href="logout.php">Logout</a>
     </nav>

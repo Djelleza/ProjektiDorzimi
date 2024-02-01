@@ -12,7 +12,7 @@ if (isset($_POST['loginBtn'])) {
         $userRepository = new UserRepository();
 
         $user = $userRepository->getUserByUsername($username);
-        // Check if the username and password exist
+        
         if ($userRepository->isUsernameAndPasswordValid($username, $password)) {
             session_start();
       

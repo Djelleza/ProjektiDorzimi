@@ -1,10 +1,24 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['user'])) {
+    header("Location: login.php");
+    exit();
+}
+// echo "<script> alert('Welcome, " . $_SESSION['user'] . "!'); </script>";
+include_once 'database/movieRepository.php';
+
+$movieRepository = new MovieRepository();
+$movieNames = $movieRepository->getAllMovieNames();
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Orikino|Buy Tickets</title>
+    <title>Orikino|Sign up</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -20,20 +34,31 @@
 
         </nav>
     </header>
-
+    
     <div class="wrapper-BT">
         <div class="mesi">
-            <div class="movie-container">
-                <label for="">Pick a movie</label>
-                <select name="" id="movie">
-                    <option value="5">Joker</option>
-                    <option value="3">Star Wars</option>
-                    <option value="6">Godzilla</option>
-                    <option value="5">What Happens Later</option>
-                    <option value="7">Wish</option>
-                    <option value="5">Trolls</option>
-                </select>
-            </div>
+        <div class="movie-container">
+        <label for="movie">Pick a movie</label>
+        <select name="movie" id="movie">
+            <?php
+            foreach ($movieNames as $movieName) {
+                echo "<option value=5>$movieName</option>";
+            }
+            ?>
+        </select>
+        </div>
+        <div class="schedule-container">
+            <label for="schedule">Pick a schedule</label>
+            <select name="schedule" id="schedule">
+                <option value="11:00">11:00</option>
+                <option value="13:00">13:00</option>
+                <option value="15:30">15:30</option>
+                <option value="17:00">17:00</option>
+                <option value="19:30">19:30</option>
+                <option value="21:00">21:00</option>
+                <option value="22:00">22:00</option>
+             </select>
+        </div>
 
             <ul class="showcase">
                 <li>

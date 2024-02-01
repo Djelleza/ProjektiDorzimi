@@ -18,7 +18,7 @@ if(isset($_POST['registerBtn'])){
         } elseif ($userRepository->isEmailTaken($email)) {
             echo "Email is already registered. Please use a different email address.";
         } else {
-            // Username and email are available, proceed with registration
+            
             $id = $username.rand(100,999);
             $users = new User($id, $username, $email, $password, 'user');
             $userRepository->insertUser($users);
