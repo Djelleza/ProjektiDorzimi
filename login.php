@@ -1,7 +1,5 @@
 <?php
     session_start();
-    // $x=include 'inc/header2.php';
-    
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -32,18 +30,12 @@
         <div class="input-box">
             <input type="password" name="psw" id="password" placeholder="Password" required>
         </div>
-        <div class="remember-forgot">
-            <!-- <label >
-             <input type="checkbox">Remember me
-            </label> -->
-        <a href="">Forgot password?</a>
-        </div>
-    <button class="btn" type="submit" name="loginBtn" value="register" onclick="validateForm()"  >Login</button>
+        <button class="btn" type="submit" name="loginBtn" value="register" onclick="validateForm()"  >Login</button>
     
-    <div class="register-link">
-        <p>Don't have an account? <a href="signup.php">Sign up</a></p>
-    </div>
-</form>
+        <div class="register-link">
+           <p>Don't have an account? <a href="signup.php">Sign up</a></p>
+        </div>
+        </form>
 <?php include_once 'database/loginController.php';?>
     
     <script>

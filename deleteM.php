@@ -1,15 +1,12 @@
 <?php
 
-$movieId = $_GET['id'];
-include_once 'database/movieRepository.php';
+    $movieId = $_GET['id'];
+    include_once 'database/movieRepository.php';
 
+    $movieRepository = new MovieRepository();
 
+    $movieRepository->deleteMovie($movieId);
 
-$movieRepository = new MovieRepository();
-
-$movieRepository->deleteMovie($movieId);
-
-header("location:dashboard.php");
-
-
+    header("location:dashboard.php");
+    
 ?>

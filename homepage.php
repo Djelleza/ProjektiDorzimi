@@ -21,14 +21,14 @@
         
             <?php
     if (isset($_SESSION['user']) && $_SESSION['user']) {
-        // If the user is logged in, link directly to buytickets.php
+        // a eshte logged in
         echo '<div class="butoni-ticket">  
         <a href="buytickets.php" class="cta">
             <button>Buy Tickets</button>
         </a>
     </div>';
     } else {
-        // If the user is not logged in, link to login.php
+        // nese jo
         echo '<div class="butoni-ticket">  
         <a href="login.php" class="cta">
             <button>Buy Tickets</button>

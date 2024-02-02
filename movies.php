@@ -18,8 +18,6 @@ $movies = $movieRepository->getAllMovies();
 </head>
 <body class="movie-body">
     <?php $x; ?>
-    
-
 
     <div class="programi">
         <h1 class="title-1">Movies At Orikino</h1>
@@ -29,8 +27,6 @@ $movies = $movieRepository->getAllMovies();
             </div>
 
         <h1 class="title-2">Now Playing</h1>
-
-        
 
         <div class="container">
             <?php foreach ($movies as $movie): ?>
@@ -43,13 +39,10 @@ $movies = $movieRepository->getAllMovies();
                 </div>
             <?php endforeach; ?>
         </div>
-        
     </div>
 
-
-
     <?php include 'inc/footer.php'; ?> 
-<script>
+    <script>
     let i = 0;
     let imgArray = ['sliderFoto/slider2.png','sliderFoto/slider3.png','sliderFoto/slider4.png','sliderFoto/slider5.png','sliderFoto/slider6.png'];
 
@@ -65,10 +58,6 @@ $movies = $movieRepository->getAllMovies();
         setTimeout("changeImg()", 2600);
     }
     document.addEventListener(onload, changeImg());
-</script>
-
-
-
-
+    </script>
 </body>
 </html>

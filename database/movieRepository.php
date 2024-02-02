@@ -70,9 +70,5 @@ class MovieRepository{
         
         return $movieNames;
     }
-
-
 }
-
-
 ?>

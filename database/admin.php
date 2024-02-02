@@ -7,7 +7,6 @@ include_once 'userRepository.php';
 $user1 = new User(null, 'djellezathaqiA', 'djellezaAthaqi@gmail.com', 'ubtUBT123','admin');
 $user2 = new User(null, 'aulonaqkaA', 'aulonaAqaka@gmail.com', 'ubtUBT123','admin');
 
-
 $userRepository = new UserRepository();
 
 

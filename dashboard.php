@@ -42,8 +42,8 @@
                             <td>' . $user['email'] . '</td>
                             <td>' . $user['password'] . '</td>
                             <td>' . $user['editedBy'] . '</td>
-                            <td><a href="edit.php?id=' . $user['id'] . '">Edit</a></td>
-                            <td><a href="delete.php?id=' . $user['id'] . '">Delete</a></td>
+                            <td><a href="editU.php?id=' . $user['id'] . '">Edit</a></td>
+                            <td><a href="deleteU.php?id=' . $user['id'] . '">Delete</a></td>
                         </tr>
                     ';
                      }
@@ -84,13 +84,9 @@
                         </tr>
                     ';
                      }
-
-
                 ?>
         </table>
-
     </div>
-
 </body>
 </html>
 

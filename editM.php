@@ -1,13 +1,12 @@
 <?php
-session_start();
-$movieId = $_GET['id'];
-include_once 'database/movieRepository.php';
+    session_start();
+    $movieId = $_GET['id'];
+    include_once 'database/movieRepository.php';
 
-$movieRepository = new MovieRepository();
+    $movieRepository = new MovieRepository();
 
-$movie  = $movieRepository->getMovieById($movieId);
+    $movie  = $movieRepository->getMovieById($movieId);
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -44,16 +43,15 @@ $movie  = $movieRepository->getMovieById($movieId);
 
 <?php 
 
-if(isset($_POST['editBtn'])){
-    $id = $movie['id'];
-    $name = $_POST['name'];
-    $summary = $_POST['summary'];
-    $image = $_POST['image'];
+    if(isset($_POST['editBtn'])){
+        $id = $movie['id'];
+        $name = $_POST['name'];
+        $summary = $_POST['summary'];
+        $image = $_POST['image'];
 
-    $movieRepository->updateMovie($id,$name,$summary,$image);
+        $movieRepository->updateMovie($id,$name,$summary,$image);
 
-    header("location:dashboard.php");
-}
-
+        header("location:dashboard.php");
+    }
 
 ?>
